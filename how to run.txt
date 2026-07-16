@@ -1,0 +1,21 @@
+inal commands to run (every time)
+Open 2 terminals.
+
+Terminal 1 — Backend
+
+cd "c:\Users\parun\OneDrive\Desktop\java projects\smart-shopping-cart\backend"
+set JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot
+mvnw.cmd spring-boot:run
+Terminal 2 — Frontend
+
+cd "c:\Users\parun\OneDrive\Desktop\java projects\smart-shopping-cart\frontend"
+npm run dev
+Then open http://localhost:5173 in your browser.
+
+Stop the app
+Press Ctrl + C in each terminal window.
+
+To close (if terminals are gone)
+netstat -ano | findstr :8080
+netstat -ano | findstr :5173
+taskkill /PID <number> /F
